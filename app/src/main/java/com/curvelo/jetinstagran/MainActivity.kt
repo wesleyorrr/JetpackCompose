@@ -1,6 +1,7 @@
 package com.curvelo.jetinstagran
 
 import android.os.Bundle
+import android.widget.HorizontalScrollView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -29,6 +30,9 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
+
+
 @Composable
 fun Greeting(name: String) {
     Text(text = "Hello $name!")
@@ -40,4 +44,6 @@ fun DefaultPreview() {
     JetInstagranTheme {
         Greeting("Android")
     }
+
+
 }
