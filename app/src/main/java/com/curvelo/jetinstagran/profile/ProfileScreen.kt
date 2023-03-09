@@ -7,6 +7,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.curvelo.jetinstagran.User
+import com.curvelo.jetinstagran.profile.components.ProfileAction
 import com.curvelo.jetinstagran.profile.components.ProfileDescription
 import com.curvelo.jetinstagran.profile.components.ProfileHeader
 import com.curvelo.jetinstagran.profile.components.ProfileInformation
@@ -42,6 +43,10 @@ fun ProfileScreen (){
             name = user.name,
             description = user.description,
             modifier = Modifier.padding(start = 16.dp, end = 16.dp,top = 4.dp, bottom = 4.dp))
+
+        ProfileAction(
+            modifier = Modifier.padding(start = 16.dp, end = 16.dp)
+        )
 
      }
     }
