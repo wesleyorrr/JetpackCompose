@@ -21,6 +21,7 @@ fun ProfileHeader(
     backClick: ()->Unit,
     notificationClick: ()->Unit,
     optionClick: ()->Unit,
+    username:String,
 
     modifier: Modifier = Modifier
 
@@ -38,7 +39,7 @@ fun ProfileHeader(
             }
 
                 Spacer(modifier = Modifier.width(16.dp))
-                Text(text = "Wesley_Oliveira", fontWeight = FontWeight.Bold)
+                Text(text = username, fontWeight = FontWeight.Bold)
 
             }
 
@@ -72,5 +73,5 @@ private fun ProfileHeaderOptions(
 @Preview(showBackground = true)
 @Composable
 fun ProfileHeaderPreview(){
-ProfileHeader({},{},{})
+ProfileHeader({},{},{},"Wesley_Oliveira")
 }
